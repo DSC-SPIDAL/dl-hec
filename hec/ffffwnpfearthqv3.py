@@ -527,7 +527,12 @@ GarbageCollectionLimit = None
 
 """###Start New Dataset"""
 
-UpdateList = ["LocalRunName", "LocalRunComment", "UseLSTMModel", "UseScienceTransformerModel", "UseTFTModel", "UseModel",
+UpdateList = ["LocalRunName",
+              "LocalRunComment",
+              "UseLSTMModel",
+              "UseScienceTransformerModel",
+              "UseTFTModel",
+              "UseModel",
               "Directoryaddon"]
 CountDatasets = 0
 
