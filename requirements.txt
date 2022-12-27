@@ -1,1 +1,8 @@
+psutil
 cloudmesh-common
+numpy
+matplotlib
+scipy
+tqdm
+
+tensorflow
