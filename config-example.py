@@ -8,3 +8,7 @@ print(config["covid.ReadMay2022Covid"])
 ReadMay2022Covid = config["covid.ReadMay2022Covid"]
 
 print (ReadMay2022Covid)
+
+
+print(config["covid.ReadMay2022Covid"])
+

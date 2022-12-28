@@ -1,3 +1,29 @@
+RunName: "EARTHQ-EMA1LR8"
+RunComment: "EARTHQ LSTM and 1 EMA LR*0.1 Earlier Stop"
+
 covid:
-  ReadMay2022Covid: None
-  Read7dayCovid: None
+  RunName: xyz
+
+earthquake:
+  RunName: klm
+
+
+covid:
+  ReadMay2022Covid: False
+  Read7dayCovid: True
+
+earthquake:
+  duration: 2
+
+general:
+  RunName: BEST10
+  this: that
+  GarbageCollect: True
+  GarbageCollectionLimit: 5000000
+
+RunName: BEST10
+
+a:
+  b:
+    c: hello
+
