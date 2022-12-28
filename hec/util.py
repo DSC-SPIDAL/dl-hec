@@ -1,4 +1,9 @@
 import sys
+import textwrap
+import datetime
+import numpy as np
+
+NaN = np.float32("NaN")
 
 def printexit(exitmessage):
     print(exitmessage)
@@ -8,7 +13,7 @@ def printexit(exitmessage):
 def wraptotext(textinput, size=None):
     if size is None:
         size = 120
-    textlist = wrap(textinput, size)
+    textlist = textwrap.wrap(textinput, size)
     textresult = textlist[0]
     for itext in range(1, len(textlist)):
         textresult += '\n' + textlist[itext]
