@@ -1,6 +1,6 @@
 import sys
 import textwrap
-import datetime
+from datetime import datetime
 import numpy as np
 
 NaN = np.float32("NaN")
