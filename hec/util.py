@@ -3,7 +3,13 @@ import textwrap
 from datetime import datetime
 import numpy as np
 
+
+def fred(abc):
+    print(abc)
+
+
 NaN = np.float32("NaN")
+
 
 def printexit(exitmessage):
     print(exitmessage)
