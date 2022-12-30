@@ -1,3 +1,39 @@
+import numpy as np
+import math
+from hec.util import printexit
+from hec.util import NaN
+from datetime import datetime
+from datetime import timedelta
+from textwrap import wraptotext
+from textwrap import wrap
+from csv import reader
+from cloudmesh.common.Shell import Shell
+from datetime import timenow
+import matplotlib.dates as mdates
+import matplotlib.pyplot as plt
+import matplotlib
+from matplotlib import colors
+import gc
+
+from hec.util import startbold
+from hec.util import startred
+from hec.util import resetfonts
+
+global ReadApril2021Covid
+global CDSpecial
+global ReadNov2021Covid
+global ReadMay2022Covid
+global Read7dayCovid
+global ReadJan2021Covid
+global ReadAugust2020Covid
+global RereadMay2020
+
+global ConvertDynamicPredictedQuantity
+
+global APPLDIR
+global RunName
+global RunComment
+global GarbageCollect
 
 if ReadApril2021Covid:
     Dropearlydata = 40  # 3 more than needed by covariates so as to get "round number of days"
