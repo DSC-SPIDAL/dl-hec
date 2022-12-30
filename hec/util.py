@@ -4,6 +4,13 @@ from datetime import datetime
 import numpy as np
 
 
+startbold = "\033[1m"
+resetfonts = "\033[0m"
+startred = '\033[31m'
+
+startpurple = '\033[35m'
+startyellowbkg = '\033[43m'
+
 def fred(abc):
     print(abc)
 

@@ -1,3 +1,79 @@
+import numpy as np
+import math
+from hec.util import printexit
+from hec.util import NaN
+from datetime import datetime
+from datetime import timedelta
+from textwrap import wraptotext
+from textwrap import wrap
+from csv import reader
+from cloudmesh.common.Shell import Shell
+from datetime import timenow
+import matplotlib.dates as mdates
+import matplotlib.pyplot as plt
+import matplotlib
+from matplotlib import colors
+import gc
+
+from gilbert import plot_gilbert2d_space_filling
+
+from hec.util import startbold
+from hec.util import startred
+from hec.util import resetfonts
+
+# is this only for earthquake
+global Earthquake
+global Specialdate
+global numberspecialeqs
+global Specialmags
+global Specialeqname
+global Numericaldate
+global Dailyunit
+global Specialuse
+global Specialxpos
+global Specialypos
+global Nloc
+global TimeIntervalUnitName
+global NpropperTimeDynamicInput
+global UseEarthquakeEigenSystems
+global read1950
+global Dateaxis
+global Num_Time
+global Eigenvectors
+global remapfaults
+global annotate_faults_ndarray
+global addRundleEMA
+global NpropperTimeDynamic
+global NumberofTimeunits
+global InitialDate
+global RundleLambda
+global CalculatedTimeSeries
+global NumTimeSeriesCalculated
+global InputPropertyNames
+global DynamicNames
+global NamespredCalculated
+global UseTFTModel
+global MapLocation
+global OriginalNloc
+global NumTimeSeriesCalculatedBasic
+global NumTimeSeriesCalculatedBasic
+global Plottingdelay
+global NpropperTimeStatic
+global InputIndextogenerateEMA
+global RundleSteps
+global FirstEMAIndex
+# if so all variables should be created in here and then imported from here in other files
+
+global makeadateplot
+
+global APPLDIR
+global RunName
+global RunComment
+global GarbageCollect
+
+# check only set in hydrology?
+global BasicInputTimeSeries
+
 """##Earthquake Routines"""
 
 
@@ -5,8 +81,10 @@ def printeq():
     qsort = np.argsort(Specialdate)
     for jquake in range(0, numberspecialeqs):
         iquake = qsort[jquake]
-        print(str(iquake) + ' ' + str(Specialdate[iquake]) + ' ' + str(round(Specialmags[iquake], 1)) + ' ' + Specialeqname[
-            iquake])
+        print(str(iquake) + ' ' +
+              str(Specialdate[iquake]) + ' ' +
+              str(round(Specialmags[iquake], 1)) +
+              ' ' + Specialeqname[iquake])
 
 
 def Addfixedearthquakes(plotpointer, graphmin, graphmax, ylogscale=False, quakecolor=None, Dateplot=True, vetoquake=None):
@@ -1433,9 +1511,6 @@ if Earthquake:
         UseFutures = False
 
 """###Plot Earthquake Images"""
-
-from matplotlib import colors
-
 
 def plotimages(Array, Titles, nrows, ncols):
     usedcolormap = "YlGnBu"

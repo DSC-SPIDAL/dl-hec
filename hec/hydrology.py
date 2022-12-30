@@ -1,3 +1,22 @@
+from cloudmesh.common.Shell import Shell
+import numpy as np
+from datetime import datetime
+from hec.util import NaN
+
+from hec.util import startbold
+from hec.util import startred
+from hec.util import resetfonts
+import gc
+
+global Hydrology
+global APPLDIR
+global GarbageCollect
+
+# TODO: change
+# basedir = /content/gdrive/My Drive/
+# datadir = f"{basedir}/Colab Datasets"
+# Configure both form yaml file
+
 
 # Read Hydrology
 if Hydrology:
