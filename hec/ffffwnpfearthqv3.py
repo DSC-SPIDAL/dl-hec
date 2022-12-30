@@ -31,6 +31,28 @@ import config
 import copy
 import json
 
+# EQ imports
+# may have to be done after Earthquake variable is declared
+from earthquake import printeq
+from earthquake import Addfixedearthquakes
+from earthquake import quakesearch
+from earthquake import log_sum_exp10
+from earthquake import log_energyweightedsum
+from earthquake import log_energy
+from earthquake import AggregateEarthquakes
+from earthquake import TransformMagnitude
+from earthquake import GatherUpData
+from earthquake import MakeEMA
+from earthquake import MakeEMAMinCT
+from earthquake import ReadEarthquakeData
+from earthquake import histogrammultiplicity
+from earthquake import threebythree
+from earthquake import makeasmalldateplot
+from earthquake import plotquakeregions
+from earthquake import plotimages
+
+# END eq imports
+
 NamesList = ["RunName",
              "RunComment",
              "LocalRunName",
