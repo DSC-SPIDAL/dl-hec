@@ -24,7 +24,8 @@ def ReadEarthquakeData():
     UseEarthquakeEigenSystems = False
     Dailyunit = 14
 
-    !ls / content / gdrive / 'My Drive' / 'Colab Datasets' / EarthquakeDec2020
+    content = Shell.run("ls '/content/gdrive/My Drive/Colab Datasets/EarthquakeDec2020'")
+    print(content)
 
     if read1950:
         MagnitudeDataFile = APPLDIR + '/1950start/SC_1950-2019.freq-D-25567x2400-log_eng.multi.csv'
