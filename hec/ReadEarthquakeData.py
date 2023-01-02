@@ -1,3 +1,17 @@
+from cloudmesh.common.Shell import Shell
+from util import startbold
+from util import startred
+from util import resetfonts
+from util import printexit
+from util import NaN
+
+import numpy as np
+import math
+from datetime import datetime
+from datetime import timedelta
+from textwrap import wraptotext
+from textwrap import wrap
+
 def ReadEarthquakeData():
     global BasicInputTimeSeries, BasicInputStaticProps, CalculatedTimeSeries, InputPropertyNames, NamespredCalculated, DynamicNames
 
@@ -24,7 +38,8 @@ def ReadEarthquakeData():
     UseEarthquakeEigenSystems = False
     Dailyunit = 14
 
-    !ls / content / gdrive / 'My Drive' / 'Colab Datasets' / EarthquakeDec2020
+    content = Shell("ls /content/gdrive/'My Drive'/'Colab Datasets'/EarthquakeDec2020")
+    print(content)
 
     if read1950:
         MagnitudeDataFile = APPLDIR + '/1950start/SC_1950-2019.freq-D-25567x2400-log_eng.multi.csv'
