@@ -1,17 +1,16 @@
 from cloudmesh.common.Shell import Shell
 
-def ReadEarthquakeData():
-    global BasicInputTimeSeries, BasicInputStaticProps, CalculatedTimeSeries, InputPropertyNames, NamespredCalculated, DynamicNames
+global BasicInputTimeSeries, BasicInputStaticProps, CalculatedTimeSeries, InputPropertyNames, NamespredCalculated, DynamicNames
 
-    global Locationname, Locationstate, Locationpopulation, Locationfips, Locationcolumns, FIPSintegerlookup, FIPSstringlookup
+global Locationname, Locationstate, Locationpopulation, Locationfips, Locationcolumns, FIPSintegerlookup, FIPSstringlookup
 
-    global Nloc, NFIPS, NpropperTime, NpropperTimeDynamicCalculated, NpropperTimeDynamic, NpropperTimeDynamicInput, NpropperTimeStatic, NumTimeSeriesCalculatedBasic
+global Nloc, NFIPS, NpropperTime, NpropperTimeDynamicCalculated, NpropperTimeDynamic, NpropperTimeDynamicInput, NpropperTimeStatic, NumTimeSeriesCalculatedBasic
 
-    global read1950, UseEarthquakeEigenSystems, RundleEigenvectors, MagnitudeMethod, \
+global read1950, UseEarthquakeEigenSystems, RundleEigenvectors, MagnitudeMethod, \
         numberspecialeqs, Specialuse, Specialmags, Specialdepth, Speciallong, Speciallat, Specialdate, Specialxpos, Specialypos, Specialeqname, \
         addRundleEMA, RundleLambda, RundleSteps, InputIndextogenerateEMA, FirstEMAIndex, Plottingdelay, OriginalNloc, MapLocation
 
-    global ReadJuly2020Covid, ReadAugust2020Covid, ReadJan2021Covid, ReadApril2021Covid, ReadNov2021Covid, ReadMay2022Covid, Read7dayCovid, \
+global ReadJuly2020Covid, ReadAugust2020Covid, ReadJan2021Covid, ReadApril2021Covid, ReadNov2021Covid, ReadMay2022Covid, Read7dayCovid, \
         ScaleProperties, ConvertDynamicPredictedQuantity, ConvertDynamicProperties, GenerateFutures, GenerateSequences, PredictionsfromInputs, \
         RereadMay2020, UseOLDCovariates, Dropearlydata, NIHCovariates, UseFutures, Usedaystart, PopulationNorm, SymbolicWindows, Hydrology, Earthquake, \
         CDSpecial, RootCasesDeaths, NumpredbasicperTime, NumpredFuturedperTime, NumTimeSeriesCalculated, Dailyunit, TimeIntervalUnitName, InitialDate, \
@@ -19,7 +18,9 @@ def ReadEarthquakeData():
         LocationTrainingfraction, RestartLocationBasedValidation, SeparateValandTrainingPlots, Plotsplitsize, Plotrealnumbers, ListofTestFIPS, \
         PlotsOnlyinTestFIPS, EarthquakeImagePlots, AddSpecialstoSummedplots, UseRealDatesonplots, Dumpoutkeyplotsaspics, OutputNetworkPictures, \
         JournalSimplePrint, PlotinDL2F, FONTSIZE, GarbageCollect, GarbageCollectionLimit
-    global NaN, PLOTNUMBER, COLABROOTDIR, APPLDIR, Directoryaddon, CHECKPOINTDIR, CovidofSomeType
+global NaN, PLOTNUMBER, COLABROOTDIR, APPLDIR, Directoryaddon, CHECKPOINTDIR, CovidofSomeType
+
+def ReadEarthquakeData():
 
     read1950 = True
     RundleEigenvectors = 2
