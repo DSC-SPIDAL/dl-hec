@@ -1,3 +1,5 @@
+from cloudmesh.common.Shell import Shell
+
 def ReadEarthquakeData():
     global BasicInputTimeSeries, BasicInputStaticProps, CalculatedTimeSeries, InputPropertyNames, NamespredCalculated, DynamicNames
 
